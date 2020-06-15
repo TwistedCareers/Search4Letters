@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="container border border-primary" style="margin-top: 20px;">
+    <h3 class="text-primary">{{ the_title }}</h3>
+    <h5 class="text-secondary">You submitted the following data: </h5>
+    <p class="alert alert-primary"><span class="text-danger">Phrase: {{ the_phrase }}</span></p>
+    <p class="alert alert-secondary"><span class="text-danger">Letters: {{ the_letters }}</span></p>
+    <h5 class="text-secondary">The results are as follows: </h5>
+    <p class="alert alert-info">When "{{ the_phrase }}" is search for "{{ the_letters}}",
+        the following results are returned: {{ the_results }}</p>
+</div>
+
+{% endblock %}
